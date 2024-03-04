@@ -6,4 +6,4 @@ title: About Us
 ## Learn more about GTLO
 
 a Test Button
-{: .btn.is-primary }
+{: .button .is-primary }

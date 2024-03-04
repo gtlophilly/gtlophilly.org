@@ -1,1 +1,3 @@
-# Welcome to Get the Lead Out Philadelphia
+---
+layout: home
+---

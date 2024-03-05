@@ -21,3 +21,8 @@ h4 {
 h5 {
     font-size: small;
 }
+
+#gtlo-header-link {
+    font-size: xx-large;
+    font-weight: bold;
+}

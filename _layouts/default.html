@@ -4,34 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {%- seo -%}
-
     <link rel="stylesheet" href="{{ "/assets/css/bulma.min.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 
 <body>
 
-    <div class="container">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a id="gtlo-header-link" class="navbar-item has-text-primary" href="/">GTLO</a>
-            </div>
+    <section class="section">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a id="gtlo-header-link" class="navbar-item has-text-primary" href="/">GTLO<span class="has-text-grey">philly</span></a>
 
-            <div class="navbar-menu">
-                <div class="navbar-start"></div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-info" href="{{ "/" | relative_url }}">Home</a>
-                            <a class="button is-info" href="{{ "/about.html" | relative_url }}">About GTLO</a>
-                            <a class="button is-info" href="https://localpermits.app" target="_blank">LocalPermits.app</a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="mainMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="navbar-menu" id="mainMenu">
+                    <div class="navbar-start">
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="{{ "/" | relative_url }}">Home</a>
+                        <a class="navbar-item" href="{{ "/about.html" | relative_url }}">About Us</a>
+                        <a class="navbar-item" href="{{ "/whatdoido.html" | relative_url }}">What do I do?</a>
+
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary">Donate</a>
+                            </div>
+                        </div>
+
+                        <div class="navbar-item">
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Search this site">
+                                </div>
+                                <div class="control">
+                                    <a class="button">
+                                        Search
+                                    </a>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+    </section>
 
     <main class="section" aria-label="Content">
         <div class="container">
@@ -39,6 +62,7 @@
         </div>
     </main>
 
+    <script src="{{ "/assets/js/burger.js" | relative_url }}"></script>
 </body>
 
 </html>

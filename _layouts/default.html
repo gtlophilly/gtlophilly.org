@@ -9,7 +9,26 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 <body>
-    
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">GTLO</a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start"></div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">Home</a>
+                        <a class="button">About GTLO</a>
+                        <a class="button is-danger">LocalPermits.app</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main class="section" aria-label="Content">
         <div class="container">
             {{ content }}
